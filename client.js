@@ -1,5 +1,6 @@
-import WalletConnect from "@walletconnect/client";
-import QRCode from "qrcode";
+// WalletConnect and QRCode are available globally via CDN
+const WalletConnect = window.WalletConnect.default;
+const QRCode = window.QRCode;
 
 // Fetch RPC configuration from the API
 const fetchRPCConfig = async () => {

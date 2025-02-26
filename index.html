@@ -20,6 +20,9 @@
 <body>
     <h1>Scan to Connect</h1>
     <img id="qr-code" alt="WalletConnect QR Code">
-    <script type="module" src="client.js?v=1"></script> <!-- Use type="module" -->
+    <!-- Load WalletConnect and QRCode from CDN -->
+    <script src="https://unpkg.com/@walletconnect/client@1.7.8/dist/umd/index.min.js"></script>
+    <script src="https://unpkg.com/qrcode@1.5.1/build/qrcode.min.js"></script>
+    <script src="client.js?v=1"></script>
 </body>
 </html>
