@@ -1,5 +1,5 @@
-const WalletConnect = require("@walletconnect/client").default;
-const QRCode = require("qrcode");
+import WalletConnect from "@walletconnect/client";
+import QRCode from "qrcode";
 
 // Fetch RPC configuration from the API
 const fetchRPCConfig = async () => {
