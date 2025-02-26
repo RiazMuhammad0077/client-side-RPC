@@ -4,7 +4,7 @@ const QRCode = require("qrcode");
 // Fetch RPC configuration from the API
 const fetchRPCConfig = async () => {
     try {
-        const response = await fetch("http://localhost:5000/crypto-host", {
+        const response = await fetch("https://server-side-rpc.vercel.app/crypto-host", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
